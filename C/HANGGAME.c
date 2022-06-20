@@ -182,6 +182,37 @@ void AddMoreWords(){
   char op, NewWord[20];
   FILE *arq = fopen("words.txt", "r+"); // r+ -> read and write
 
+  if(won()){
+   printf("                      |     \n");
+   printf("                     ooo    \n");
+   printf("                  - ooooo - \n");
+   printf("                     ooo    \n");
+   printf("          (_)         |     \n");
+   printf("         \\ | /              \n");
+   printf("          \\|/               \n");
+   printf("           |                \n");
+   printf("           |                \n");
+   printf("           |                \n");
+   printf("          / \\              \n");
+   printf("        _/   \\_           \n\n");
+   printf("YOU'RE GOOD IN IT, YOU WIN!\n\n");
+
+  }else{
+   
+   printf("          _________________            \n");
+   printf("         (                  )          \n");
+   printf("        (                    )         \n");
+   printf("       (   XX           XX    )        \n"); 
+   printf("      (   XXXX         XXXX    )       \n");
+   printf("     (     XX           XX      )      \n");
+   printf("     (           ooo            )      \n");
+   printf("     (                          )      \n");
+   printf("      (       _________        )       \n");
+   printf("       (                      )        \n");
+   printf("        (____________________)         \n\n"); 
+   printf("     THIS ISN'T DARK BUT YOU DIED    \n\n");
+  }
+
   printf("\nDo you want to add a new word to our Database[Y/N]? ");
   scanf("%c", &op);
 
